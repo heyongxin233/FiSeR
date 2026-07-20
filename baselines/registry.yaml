@@ -1,0 +1,141 @@
+ResNet-50:
+  kind: local
+  license: MIT
+  source_snapshot: baselines/vendor/Resnet50-main
+  train_entrypoint: baselines/train.py
+  eval_entrypoint: baselines/evaluate.py
+  config: baselines/configs/resnet50_wildfake.yaml
+
+CLIPDetection:
+  kind: local
+  license: MIT
+  source_snapshot: baselines/vendor/CLIPDetection-main
+  train_entrypoint: baselines/train.py
+  eval_entrypoint: baselines/evaluate.py
+  config: baselines/configs/clip_detection_wildfake.yaml
+
+CNNDetection:
+  kind: upstream
+  source_dir: baselines/vendor/CNNDetection-master
+  repository: https://github.com/peterwang512/CNNDetection.git
+  commit: ea0b5622365e3a9cd31d1b54b6b5971131a839ab
+  license: CC-BY-NC-SA-4.0
+  train_entrypoint: train.py
+  eval_entrypoint: eval.py
+
+LGrad:
+  kind: upstream
+  source_dir: baselines/vendor/LGrad-master
+  repository: https://github.com/chuangchuangtan/LGrad.git
+  commit: 7cb5973821f9ab56b0dbc3aca50b88c835ebc993
+  license: NOASSERTION
+  train_entrypoint: train-detector.sh
+  eval_entrypoint: CNNDetection/test.py
+
+Gram-Net:
+  kind: upstream
+  source_dir: baselines/vendor/Gram-Net-main
+  repository: https://github.com/liuzhengzhe/Global_Texture_Enhancement_for_Fake_Face_Detection_in_the-Wild.git
+  commit: a416145f84890a937b51dfe5343dd0e9fd47ab52
+  license: NOASSERTION
+  train_entrypoint: train.py
+  eval_entrypoint: test.py
+
+FreqNet:
+  kind: upstream
+  source_dir: baselines/vendor/FreqNet-DeepfakeDetection-main
+  repository: https://github.com/chuangchuangtan/FreqNet-DeepfakeDetection.git
+  commit: 2c6bd020cda1c0001e7a7d30ebd2dd5c55b5a8b6
+  license: NOASSERTION
+  train_entrypoint: train.py
+  eval_entrypoint: test.py
+
+NPR:
+  kind: upstream
+  source_dir: baselines/vendor/NPR-DeepfakeDetection-main
+  repository: https://github.com/chuangchuangtan/NPR-DeepfakeDetection.git
+  commit: 781ced3f7ca2cdc69ec9dd4ef27e8d0b3c07752a
+  license: NOASSERTION
+  train_entrypoint: train.py
+  eval_entrypoint: test.py
+
+SAFE:
+  kind: upstream
+  source_dir: baselines/vendor/SAFE-main
+  repository: https://github.com/Ouxiang-Li/SAFE.git
+  commit: 4e998724651b227def64f5be0cd60c0aa1552c35
+  license: Apache-2.0
+  train_entrypoint: main_finetune.py
+  eval_entrypoint: main_finetune.py
+
+LASTED:
+  kind: upstream
+  source_dir: baselines/vendor/LASTED
+  repository: https://github.com/HighwayWu/LASTED.git
+  commit: 191069c73ab7ae1f6f2c827add0de72121556ecc
+  license: MIT
+  train_entrypoint: main.py
+  eval_entrypoint: main.py
+
+UniFD:
+  kind: upstream
+  source_dir: baselines/vendor/UniversalFakeDetect
+  repository: https://github.com/WisconsinAIVision/UniversalFakeDetect.git
+  commit: 76a0e3e60a8a06458707a625d269ba815a2e5919
+  license: MIT
+  train_entrypoint: train.py
+  eval_entrypoint: test.py
+
+AIDE:
+  kind: upstream
+  source_dir: baselines/vendor/AIDE-main
+  repository: https://github.com/shilinyan99/AIDE.git
+  commit: 6725b710d5c437ab2f59792908ce0377dfc907de
+  license: MIT
+  train_entrypoint: main_finetune.py
+  eval_entrypoint: main_finetune.py
+
+DIRE:
+  kind: upstream
+  source_dir: baselines/vendor/DIRE
+  repository: https://github.com/ZhendongWang6/DIRE.git
+  commit: 1f89fff15f0e478307cdea9abdfe06a52fe7838a
+  license: NOASSERTION
+  train_entrypoint: train.py
+  eval_entrypoint: test.py
+
+Effort:
+  kind: upstream
+  source_dir: baselines/vendor/Effort-AIGI-Detection
+  repository: https://github.com/YZY-stack/Effort-AIGI-Detection.git
+  commit: 96f5dea2b534d400cfd7003f053c7e93c8e16461
+  license: NOASSERTION
+  train_entrypoint: UniversalFakeDetect_Benchmark/train.py
+  eval_entrypoint: UniversalFakeDetect_Benchmark/test.py
+
+SPAI:
+  kind: upstream
+  source_dir: baselines/vendor/spai
+  repository: https://github.com/mever-team/spai.git
+  commit: 8ff7b3b6779b4fcb43cf313471d9cb1c62d129a4
+  license: Apache-2.0
+  train_entrypoint: train.py
+  eval_entrypoint: test.py
+
+C2P-CLIP:
+  kind: upstream
+  source_dir: baselines/vendor/C2P-CLIP-DeepfakeDetection
+  repository: https://github.com/chuangchuangtan/C2P-CLIP-DeepfakeDetection.git
+  commit: 5c1a66cdd70f21e7130a28b9f5ff53e94dea5bc2
+  license: NOASSERTION
+  train_entrypoint: train.py
+  eval_entrypoint: test.py
+
+LOTA:
+  kind: upstream
+  source_dir: baselines/vendor/LOTA
+  repository: https://github.com/hongsong-wang/LOTA.git
+  commit: 487bb02dfc93df3c2538e9b97bd05f146c6a52cc
+  license: MIT
+  train_entrypoint: train.py
+  eval_entrypoint: test.py

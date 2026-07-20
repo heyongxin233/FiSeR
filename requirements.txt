@@ -1,0 +1,14 @@
+torch>=2.3
+torchvision>=0.18
+transformers>=4.56.1,<5
+huggingface-hub>=0.28
+safetensors>=0.4.5
+lmdb>=1.4.1
+numpy>=1.24,<3
+Pillow>=10.0
+pyarrow>=15.0
+PyYAML>=6.0
+scikit-learn>=1.3
+# Formal evaluation rejects CPU-only FAISS builds at runtime.
+faiss-gpu>=1.8.0
+tqdm>=4.66

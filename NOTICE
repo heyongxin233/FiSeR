@@ -1,0 +1,11 @@
+FiSeR: Fine-Grained Source Representations for Cross-Domain AI Image Detection
+
+Copyright 2026 FiSeR authors.
+
+This repository contains original FiSeR code under the MIT License.
+The DINOv3 backbone, benchmark datasets, and upstream baseline implementations
+are separate works with their own licenses and terms. Check those terms before
+redistributing their weights, datasets, or source code.
+
+See THIRD_PARTY_NOTICES.md and baselines/registry.yaml for pinned upstream
+sources and the license status recorded for each paper baseline.

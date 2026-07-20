@@ -1,0 +1,19 @@
+CUDA_VISIBLE_DEVICES=0,1,2,3 python scripts/train.py \
+    --name genimage \
+    --dataroot ./GenImage_Dataset/ \
+    --classes sdv4 \
+    --batch_size 128 \
+    --lr 0.0002 \
+    --niter 1 \
+    --total_steps 100 \
+    --loadSize 256 \
+    --cropSize 224 \
+    --seed 123 \
+    --clip ./clip-vit-large-patch14/ \
+    --claloss 8 \
+    --cates Deepfake Camera \
+    --eval_freq 100 \
+    --loss_freq 10 \
+    --lora_r 6 \
+    --lora_alpha 6 \
+    --lora_dropout 0.5

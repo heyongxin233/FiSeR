@@ -1,0 +1,21 @@
+CUDA_VISIBLE_DEVICES=0,1,2,3 python scripts/train.py \
+    --name ForenSynths_train_val_19test_dataset \
+    --dataroot ./ForenSynths_train_val_19test/ \
+    --classes car,cat,chair,horse \
+    --batch_size 128 \
+    --delr_freq 10 \
+    --lr 0.0004 \
+    --niter 1 \
+    --total_steps 800 \
+    --delr 0.9 \
+    --loadSize 256 \
+    --cropSize 224 \
+    --seed 123 \
+    --clip ./clip-vit-large-patch14/ \
+    --claloss 8.0 \
+    --cates Deepfake Camera \
+    --eval_freq 800 \
+    --loss_freq 50 \
+    --lora_r 6 \
+    --lora_alpha 6 \
+    --lora_dropout 0.8

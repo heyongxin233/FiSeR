@@ -1,0 +1,47 @@
+protocol: legacy
+temperature: 0.05
+max_k: 51
+target_fpr: 0.05
+tolerance: 5.0e-6
+
+datasets:
+  wildfake:
+    display_name: WildFake
+    layer: 18
+    expected:
+      k: 25
+      auroc: 0.999956
+      tpr_at_fpr: 0.999883
+  community:
+    display_name: Community Forensics
+    layer: 19
+    expected:
+      k: 51
+      auroc: 0.969526
+      tpr_at_fpr: 0.874990
+  aigibench:
+    display_name: AIGIBench
+    layer: 18
+    expected:
+      k: 51
+      auroc: 0.980019
+      tpr_at_fpr: 0.937495
+  chameleon:
+    display_name: Chameleon
+    layer: 23
+    expected:
+      k: 51
+      auroc: 0.963549
+      tpr_at_fpr: 0.863844
+  genimage:
+    display_name: GenImage
+    layer: 23
+    expected:
+      k: 50
+      auroc: 0.998395
+      tpr_at_fpr: 0.995532
+
+average:
+  expected:
+    auroc: 0.982289
+    tpr_at_fpr: 0.934349

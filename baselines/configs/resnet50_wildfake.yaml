@@ -1,0 +1,17 @@
+architecture: resnet50
+train_lmdb: /path/to/Image_detection_datasets/WildFake/train
+output_dir: outputs/resnet50_wildfake
+
+seed: 42
+epochs: 5
+image_size: 224
+per_device_batch_size: 128
+gradient_accumulation_steps: 1
+num_workers: 8
+learning_rate: 1.0e-3
+min_learning_rate: 1.0e-6
+warmup_steps: 1000
+weight_decay: 1.0e-4
+precision: bf16
+save_every_epochs: 1
+log_every_steps: 10

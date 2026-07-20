@@ -1,0 +1,19 @@
+architecture: clip_detection
+model_name: openai/clip-vit-large-patch14
+processor_name: openai/clip-vit-large-patch14
+train_lmdb: /path/to/Image_detection_datasets/WildFake/train
+output_dir: outputs/clip_detection_wildfake
+
+seed: 42
+epochs: 5
+image_size: 224
+per_device_batch_size: 32
+gradient_accumulation_steps: 4
+num_workers: 8
+learning_rate: 1.0e-5
+min_learning_rate: 1.0e-7
+warmup_steps: 2000
+weight_decay: 1.0e-4
+precision: bf16
+max_grad_norm: 1.0
+log_every_steps: 10

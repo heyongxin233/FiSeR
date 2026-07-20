@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: If you use FiSeR, please cite the paper below.
+title: "FiSeR: Fine-Grained Source Representations for Cross-Domain AI Image Detection"
+type: software
+version: 0.1.0
+date-released: 2026-07-15
+license: MIT
+repository-code: https://github.com/heyongxin233/FiSeR
+url: https://arxiv.org/abs/2606.00606
+authors:
+  - family-names: Zhang
+    given-names: Shan
+  - family-names: He
+    given-names: Yongxin
+  - family-names: Zhang
+    given-names: Mingming
+  - family-names: Tian
+    given-names: Huiwen
+  - family-names: Ma
+    given-names: Lei
+identifiers:
+  - type: doi
+    value: 10.48550/arXiv.2606.00606
+  - type: url
+    value: https://arxiv.org/abs/2606.00606
+    description: arXiv preprint
+preferred-citation:
+  type: article
+  title: "FiSeR: Fine-Grained Source Representations for Cross-Domain AI Image Detection"
+  year: 2026
+  authors:
+    - family-names: Zhang
+      given-names: Shan
+    - family-names: He
+      given-names: Yongxin
+    - family-names: Zhang
+      given-names: Mingming
+    - family-names: Tian
+      given-names: Huiwen
+    - family-names: Ma
+      given-names: Lei
+  identifiers:
+    - type: doi
+      value: 10.48550/arXiv.2606.00606

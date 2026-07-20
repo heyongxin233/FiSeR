@@ -1,0 +1,32 @@
+# Install through conda
+# pytorch
+# torchvision~=0.18.1
+# tsnecuda
+# Compile from sources
+# apex
+# Install through pip
+opencv-python~=4.10.0.84
+pyyaml~=6.0.1
+scipy~=1.14.0
+tensorboard
+termcolor~=2.4.0
+timm==0.4.12
+yacs~=0.1.8
+numpy~=1.26.4
+torchmetrics~=1.4.0.post0
+tqdm~=4.66.4
+pillow~=10.4.0
+PyYAML
+click~=8.1.7
+neptune~=1.11.1
+albumentations==1.4.14
+albucore==0.0.16
+lmdb~=1.5.1
+networkx~=3.3
+seaborn~=0.13.2
+pandas~=2.2.2
+neptune
+einops~=0.8.0
+git+https://github.com/openai/CLIP.git
+onnx
+onnxscript

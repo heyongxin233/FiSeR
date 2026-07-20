@@ -1,0 +1,21 @@
+{
+  "nature": 0,
+  "MAE": 1,
+  "DDPM": 2,
+  "Midjourney": 3,
+  "DF-GAN": 4,
+  "Imagen": 5,
+  "GALIP": 6,
+  "VQVAE": 7,
+  "BigGAN": 8,
+  "MAGE": 9,
+  "VQGAN": 10,
+  "DDIM": 11,
+  "SD": 12,
+  "VQDM": 13,
+  "starGAN": 14,
+  "ADM": 15,
+  "styleGAN": 16,
+  "DALLE": 17,
+  "GigaGAN": 18
+}
