@@ -165,8 +165,7 @@ baselines/scripts/evaluate.sh resnet50
 Use the method ID in [baselines/README.md](baselines/README.md) to train and test
 CNNDetection, LGrad, Gram-Net, FreqNet, NPR, SAFE, LASTED, UniFD, AIDE, DIRE,
 Effort, SPAI, C2P-CLIP, or LOTA in the same way. The source snapshots under
-`baselines/vendor/` retain their native dependencies and licenses; review
-[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) before redistribution.
+`baselines/vendor/` retain their native dependencies and licenses.
 
 ## Citation
 
